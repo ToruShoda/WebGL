@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | 成田空港</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 960px; height: 600px; background: #231F20"></canvas>
+    <script src="Build/NaritaInternationalAirport.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/NaritaInternationalAirport.data.gz",
+        frameworkUrl: "Build/NaritaInternationalAirport.framework.js.gz",
+        codeUrl: "Build/NaritaInternationalAirport.wasm.gz",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "TVasahi",
+        productName: "成田空港",
+        productVersion: "1.0",
+      });
+    </script>
+  </body>
+</html>
